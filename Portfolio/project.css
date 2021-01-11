@@ -1,0 +1,100 @@
+.project{
+    width: auto;
+    padding: 20px 0;
+    background-color: black;
+    color: white;
+    
+}
+.ProjectText{
+    padding-top: 8vh;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.ProjectText h2{
+    font-size: 30px;
+    font-weight: 500;
+    
+}
+.ProjectText p{
+    padding-top: 1vh;
+    color: crimson;
+    font-size: 20px; 
+}
+.ProjectText p::before,
+p::after{
+    background-color: white;
+    display: inline-block;
+    content: "";
+    height: 3.2px;
+    width:1.5%;
+    position: relative;
+    vertical-align: middle;
+}
+
+/* Card layout*/ 
+
+
+.Proj-content{
+    display: flex;
+    margin: 6%;
+}
+
+.Proj-content .card{
+    width: calc(100% - 20px);
+    margin: 10px 20px;
+    background: #222;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+    padding:10px 10px 40px 10px;
+    transition: all 0.3s ease;
+}
+
+.Proj-content .card .box a{
+    color: crimson;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.Proj-content .card .box h2{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.Proj-content .card .box article{
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 0px 10px 0px 10px;
+    margin-top: 10px;
+    color: white;
+}
+.Proj-content .card .box a:hover{
+    color: white;
+}
+.Proj-content .card:hover{
+    background: crimson;
+}
+ .Proj-content .card .box{
+    transition: all 0.3s ease;
+}
+ .Proj-content .card:hover .box{
+    transform: scale(1.05);
+}
+ 
+ .Proj-content .card:hover i{
+    color: #fff;
+}
+ .Proj-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+@media (max-width: 960px)
+{
+    .Proj-content{
+        flex-direction: column;
+        margin: 5%;
+    }
+    
+}

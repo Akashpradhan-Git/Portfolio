@@ -1,0 +1,254 @@
+.about{
+    height: 90vh;
+    width: auto;
+
+}
+.about-text{
+    padding-top: 8vh;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.about-text h2{
+   font-size: 30px;
+    
+}
+.subtitle{
+    font-size: 22px;
+    color: crimson;
+    text-align: center;
+    flex-direction: row;
+}
+h5:before,
+h5:after{
+   background-color: black;
+   content: "";
+   display: inline-block;
+   height: 3.5px;
+   position: relative;
+   vertical-align: middle;
+   width: 25px;
+}
+
+/* My details*/
+.myContents{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.photo{
+    padding-left: 10%;
+    padding-top: 30px;
+}
+.myphoto{
+    max-height: 70vh;
+    height: auto;
+    width: auto;
+    max-width: 40vh;
+    border-radius: 15%;
+}
+ .details{
+   position: relative;
+   padding-left: 10%;
+   margin-top: 5vh;
+}
+.details h2{
+    font-size: 20px;
+}
+.details h2 span{
+    color: crimson;
+}
+.details .text-ab{
+  font-size: 16px;
+  padding-top: 10px;
+  padding-right: 5vw;
+  text-align: justify;
+  line-height: 2.0;
+  text-justify: inter-word;
+
+}
+.details .text-ab p{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+
+.resume a{
+    position: relative;
+    display: inline-block;
+   background: crimson;
+   margin-top: 20px;
+   padding: 15px 30px;
+   text-align: center;
+   border-radius: 20px 20px;
+   cursor: pointer;
+   border: 3px solid crimson;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: .5s ease;
+}
+.resume a:hover{
+    background:none;
+    color: crimson;
+    font-size: 18px;
+}
+
+
+/* Responsive*/
+@media (max-width:999px){
+    .about{
+        margin-bottom: 20vh;
+        max-height: auto;
+        height: 110vh;
+    }
+    .myContents{
+        flex-direction: column;
+    }
+    
+    .photo{
+        padding-left: 10%;
+        padding-top:15px;
+    }
+    .myphoto{
+        max-height: 50vh;
+        height: auto;
+        width: auto;
+        max-width: 30vh;
+        border-radius: 15%;
+    }
+    .details h2{
+        font-size: 20px;
+        text-align: left;
+    }
+    
+  
+    .resume{
+        margin-top: 1vh;
+       align-items: center;
+    }
+    .details{
+        margin-top: 5vh;
+        text-align: center;
+    }
+}
+
+
+@media (max-width:899px){
+    .myContents{
+        flex-direction: column;
+    }
+    .about{
+        max-height: auto;
+        height: 110vh;
+        width: auto;
+    }
+   
+    .about-text{
+        font-size: 30px;
+        text-align: center;
+        margin-top: 7vh;
+        display: block;
+    
+    }
+    .subtitle{
+        font-size: 22px;
+        color: crimson;
+        text-align: center;
+        flex-direction: row;
+    }
+
+
+    .details h2{
+        font-size: 20px;
+        text-align: left;
+    }
+    .details p{
+        padding-top: 16px;
+        font-size: 16px;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    .details .text-ab{
+        font-size: 14px;
+        padding-top: 7px;
+        padding-right: 5vw;
+        text-align: justify;
+        line-height: 1.5;
+        text-justify: inter-word;
+      
+      }
+      .details .text-ab p{
+          margin-top: 10px;
+          font-size: 14px;
+      }
+    .resume{
+        margin-top: -5px;
+       align-items: center;
+    }
+    .details{
+        margin-top: 5vh;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:650px){
+    .about{
+        max-height: auto;
+        height: 110vh;
+        width: auto;
+    }
+   
+    .about-text{
+        font-size: 30px;
+        text-align: center;
+        margin-top: 5vh;
+        display: block;
+    
+    }
+    .subtitle{
+        font-size: 22px;
+        color: crimson;
+        text-align: center;
+        flex-direction: row;
+    }
+
+
+    .details h2{
+        font-size: 20px;
+        text-align: left;
+    }
+    .details p{
+        padding-top: 11px;
+        font-size: 11px;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    .resume{
+        margin-top: -10px;
+       align-items: center;
+    }
+    .details{
+        margin-top: 5vh;
+        text-align: center;
+    }
+
+    @media (max-width:508px){
+        .about{
+            max-height: auto;
+            height: 110vh;
+            width: auto;
+        }
+        .resume{
+            margin-top: 10px;
+           align-items: center;
+        }
+    }
+
+}
+
+
